@@ -11,3 +11,8 @@ def user_list(request):
 
 def user_add(request):
     return HttpResponse("新增用户")
+
+def tpl(request):
+    name = 'xiaoyumi'
+    roles = ['admin', 'user', 'xx']
+    return render(request,'tpl.html', {'name':name,'roles':roles})
