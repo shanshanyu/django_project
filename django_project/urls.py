@@ -26,4 +26,7 @@ urlpatterns = [
     path('user/list/', views.user_list),
     path('tpl/',views.tpl),
     path('login/',views.login),
+    path('orm/insert/',views.orm_insert),
+    path('orm/select/',views.orm_select),
+    path('orm/update/',views.orm_update),
 ]

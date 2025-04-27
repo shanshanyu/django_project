@@ -5,3 +5,7 @@ from django.db import models
 class UserInfo(models.Model):
     username=models.CharField(max_length=50)
     password=models.CharField(max_length=50)
+
+
+# insert into 添加数据
+# UserInfo.objects.create(username='小玉米',password='1234')
