@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+
+    <a href="/new_user/add/">添加</a>
+    <h1>用户列表</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in data_list %}
+            <tr>
+                <td>{{ obj.username }}</td>
+                <td>{{ obj.password }}</td>
+                <td>
+                    <a href="/new_user/del?username={{ obj.username }}">删除</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>

@@ -17,16 +17,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app01 import views
+from app01 import views as app01_views
+from user_management import views as user_management_views
+from employ_management import views as employ_management_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('user/add/', views.user_add),
-    path('user/list/', views.user_list),
-    path('tpl/',views.tpl),
-    path('login/',views.login),
-    path('orm/insert/',views.orm_insert),
-    path('orm/select/',views.orm_select),
-    path('orm/update/',views.orm_update),
+    path('index/', app01_views.index),
+    path('user/add/', app01_views.user_add),
+    path('user/list/', app01_views.user_list),
+    path('tpl/',app01_views.tpl),
+    path('login/',app01_views.login),
+    path('orm/insert/',app01_views.orm_insert),
+    path('orm/select/',app01_views.orm_select),
+    path('orm/update/',app01_views.orm_update),
+    path('new_user/list/',user_management_views.user_list),
+    path('new_user/add/',user_management_views.add_user),
+    path('new_user/del/',user_management_views.del_user),
+    path('depart/list/',employ_management_views.depart_list),
+    path('depart/add/',employ_management_views.depart_add),
+    path('depart/del/',employ_management_views.depart_del),
+    path('depart/<int:nid>/edit/',employ_management_views.depart_edit),
 ]
