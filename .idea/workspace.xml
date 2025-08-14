@@ -187,7 +187,7 @@
       <workItem from="1750986085557" duration="5550000" />
       <workItem from="1751005149817" duration="7331000" />
       <workItem from="1755093022058" duration="788000" />
-      <workItem from="1755178405290" duration="566000" />
+      <workItem from="1755178405290" duration="1316000" />
     </task>
     <task id="LOCAL-00001" summary="django 初体验">
       <option name="closed" value="true" />
@@ -229,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751012513772</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="django go go go">
+      <option name="closed" value="true" />
+      <created>1755178983759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755178983759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
