@@ -21,6 +21,8 @@ from app01 import views as app01_views
 from user_management import views as user_management_views
 from employ_management import views as employ_management_views
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', app01_views.index),
@@ -38,4 +40,5 @@ urlpatterns = [
     path('depart/add/',employ_management_views.depart_add),
     path('depart/del/',employ_management_views.depart_del),
     path('depart/<int:nid>/edit/',employ_management_views.depart_edit),
+
 ]

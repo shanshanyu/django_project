@@ -32,7 +32,7 @@ def login(request):
 
 def orm_insert(request):
     #插入数据到 app01_userinfo表中
-    models.UserInfo.objects.create(username='xiaoyumi', password='1234')
+    models.UserInfo.objects.create(username='xiaoyumi', password='12345')
     #删除这张表的所有数据
     # models.UserInfo.objects.all().delete()
     # #删除指定行
